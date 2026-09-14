@@ -17,3 +17,5 @@ const contatoSchema = new mongoose.Schema({
   usuarioId: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario', required: true } 
 
 });
+
+module.exports = mongoose.model('Contato', contatoSchema);
